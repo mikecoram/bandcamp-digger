@@ -1,0 +1,9 @@
+include mixins/release
+
+doctype html
+html(lang="en")
+  head
+  body
+    h1 #{artistOrLabel.title}
+    each release in releases
+      +release(release)
